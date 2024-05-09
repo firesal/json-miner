@@ -11,6 +11,14 @@ pip install -e json-miner
 
 It uses `pyproject.toml` file to install directly to the `venv`.
 
+Or directly from git using.
+
+```bash
+pip install git+https://github.com/firesal/json-miner
+```
+
+
+
 ### Usage
 
 ```python
