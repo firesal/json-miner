@@ -1,1 +1,1 @@
-from .miner import JsonMiner
+from .miner import JsonMiner # noqa

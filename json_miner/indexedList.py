@@ -1,12 +1,7 @@
-import re
-
-import logging
-
-
 class IndexedSubsetList(list):
     '''
     A modified list class to keep track of original indexes after selecting a subset of elements.
-   
+
     self.original_indices: Shows the initial indexes of the elements mapped. A subset of these elements
                            can be selected using the turn_on method.
     self.binary_flags: Indicates whether an element is selected (1) or not selected (0). This is used to
@@ -57,26 +52,3 @@ class IndexedSubsetList(list):
         Get the original indexes that was traced.
         '''
         return self.original_indices[start], self.original_indices[end]
-
-
-class DoubleValueList(IndexedSubsetList):
-    '''
-    Older depreciated class  to be replaced with DoubleIndexList
-    '''
-    def print_stripped_text(self):
-        '''
-        Depreciated method, to be replaced with get_subset.
-        '''
-        logging.warning('To be depreciated, to be replaced with get_subset method')
-        return self.get_subset(self)
-
-    def skip_indexes(self, start, end):
-        '''
-        Older method to get original index
-        Depreciated
-        '''
-        logging.warning('To be depreciated, to be replaced with get_original_index method')
-        return self.get_original_indexes(self, start, end)
-
-
-

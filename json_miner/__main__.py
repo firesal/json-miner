@@ -1,4 +1,1 @@
-from .miner import JsonMiner
-
-# if __name__ == '__main__':
-# 	weeablind()
+from .miner import JsonMiner # noqa
