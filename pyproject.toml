@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json_miner"
+version = "0.2"
+description = "Package used to extract json data from text content.."
+authors = [{name = "Sreejith T Das", email = "sreejithtdas@ymail.com"}
+]
+
+dependencies = [
+]
