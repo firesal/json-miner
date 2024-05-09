@@ -32,8 +32,9 @@ for text in JsonMiner(text_to_be_mined).get_blocks():
 
 ### Testing Package
 
-To test package with the test file with html in json in it, you can use
+To test package with the test file with html in json in it, you can use after cloning package and from the project directory run
 
 `python3 -m json_miner.test`
 
-This loads html from miner folder which is test.html
+This loads html from json_miner folder which is in `test.html`
+
